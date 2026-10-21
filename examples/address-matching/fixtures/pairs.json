@@ -1,0 +1,14 @@
+[
+ {"a1": "100 Quillfeather St", "a2": "100 Quillfeather Street", "label": 1, "why": "ok", "case": "suffix abbreviation"},
+ {"a1": "2210 Marrowbend Dr", "a2": "2210 Marrowbend Drive NE", "label": 1, "why": "ok", "case": "directional on one side only (the v1 bug, and the local model's failure mode)"},
+ {"a1": "45 W 4th Ave", "a2": "45 West Fourth Avenue", "label": 1, "why": "ok", "case": "ordinal word vs digits"},
+ {"a1": "780 Larkspur Pkwy, Apt 12", "a2": "780 Larkspur Pky", "label": 1, "why": "ok", "case": "unit designator + suffix variant"},
+ {"a1": "12 Café Ln", "a2": "12 Cafe Lane", "label": 1, "why": "ok", "case": "accented character"},
+ {"a1": "3301 Tindalwood Cir.", "a2": "3301 Tindalwood Circle", "label": 1, "why": "ok", "case": "trailing period"},
+ {"a1": "5150 Brackenridge Rd", "a2": "5150 Brakenridge Road", "label": 1, "why": "ok", "case": "one-letter typo, fuzzy core"},
+ {"a1": "45 W 34th St", "a2": "45 W 39th St", "label": 0, "why": "number-differs", "case": "different numbered street"},
+ {"a1": "901 Vantor Ave", "a2": "903 Vantor Ave", "label": 0, "why": "number-differs", "case": "neighbouring house number"},
+ {"a1": "18 Pemberly Ct", "a2": "18 Ashgrove Ct", "label": 0, "why": "core-differs", "case": "different street"},
+ {"a1": "300 Hollowmere St NE", "a2": "300 Hollowmere St SE", "label": 0, "why": "directional-conflict", "case": "conflicting quadrant"},
+ {"a1": "77 Fennick St NW", "a2": "77 Fennick Street NE", "label": 1, "why": "directional-conflict", "case": "KNOWN MISS: one source has the wrong quadrant; only coordinates can rescue it", "known_miss": true}
+]
